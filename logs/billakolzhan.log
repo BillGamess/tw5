@@ -1,0 +1,123 @@
+22/03/25 10:37:03 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+22/03/25 10:37:04 - DEBUG - urllib3.connectionpool - [_make_request]: https://raw.githubusercontent.com:443 "GET /rdavydov/Twitch-Channel-Points-Miner-v2/master/TwitchChannelPointsMiner/__init__.py HTTP/1.1" 200 125
+22/03/25 10:37:04 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: Twitch Channel Points Miner v2-1.9.9 (fork by rdavydov)
+22/03/25 10:37:04 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: https://github.com/rdavydov/Twitch-Channel-Points-Miner-v2
+22/03/25 10:37:04 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Start session: '634de0e4-18c2-48f7-95c9-1b5770e8f984'
+22/03/25 10:37:04 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: You'll have to login to Twitch!
+22/03/25 10:37:04 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Trying the TV login method..
+22/03/25 10:37:04 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): id.twitch.tv:443
+22/03/25 10:37:05 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/device HTTP/1.1" 200 164
+22/03/25 10:37:05 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Open https://www.twitch.tv/activate
+22/03/25 10:37:05 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: and enter this code: HYCGHPZL
+22/03/25 10:37:05 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Hurry up! It will expire in 30 minutes!
+22/03/25 10:37:11 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+22/03/25 10:37:16 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+22/03/25 10:37:21 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+22/03/25 10:37:27 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+22/03/25 10:37:32 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 200 248
+22/03/25 10:37:32 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 10:37:33 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 206
+22/03/25 10:37:33 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [save_cookies]: Saving cookies to your computer..
+22/03/25 10:37:33 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Loading data for 11 streamers. Please wait...
+22/03/25 10:37:34 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 10:37:34 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 10:37:35 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 10:37:35 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 10:37:35 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 10:37:35 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username01'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":25,"operationName":"ReportMenuItem","requestID":"01JPY28NS2SNAZR0GKA4X3GFT6"}}
+22/03/25 10:37:35 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username01 does not exist
+22/03/25 10:37:36 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 10:37:36 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 10:37:36 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 10:37:36 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 10:37:37 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 10:37:37 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username02'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":23,"operationName":"ReportMenuItem","requestID":"01JPY28QG19S2GMND1D3WP5KWT"}}
+22/03/25 10:37:37 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username02 does not exist
+22/03/25 10:37:37 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 10:37:38 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 10:37:38 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 10:37:38 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 10:37:39 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 10:37:39 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username03'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":21,"operationName":"ReportMenuItem","requestID":"01JPY28S7YFCEMWE5JRSHV7N16"}}
+22/03/25 10:37:39 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username03 does not exist
+22/03/25 10:37:39 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:13 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+22/03/25 11:35:13 - DEBUG - urllib3.connectionpool - [_make_request]: https://raw.githubusercontent.com:443 "GET /rdavydov/Twitch-Channel-Points-Miner-v2/master/TwitchChannelPointsMiner/__init__.py HTTP/1.1" 200 125
+22/03/25 11:35:13 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: Twitch Channel Points Miner v2-1.9.9 (fork by rdavydov)
+22/03/25 11:35:13 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: https://github.com/rdavydov/Twitch-Channel-Points-Miner-v2
+22/03/25 11:35:13 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Start session: '8f6bc847-9750-4cd4-b54f-2652c4429550'
+22/03/25 11:35:13 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Loading data for 11 streamers. Please wait...
+22/03/25 11:35:14 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:14 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:14 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:14 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:15 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:15 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username01'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":28,"operationName":"ReportMenuItem","requestID":"01JPY5J8F0VAGV1RJ6T6ZJ8EE4"}}
+22/03/25 11:35:15 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username01 does not exist
+22/03/25 11:35:16 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:16 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:16 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:16 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:17 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:17 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username02'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":24,"operationName":"ReportMenuItem","requestID":"01JPY5JA2XT9WW9E7EH7MABAHE"}}
+22/03/25 11:35:17 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username02 does not exist
+22/03/25 11:35:17 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:18 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:18 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:18 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:18 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:18 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username03'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":25,"operationName":"ReportMenuItem","requestID":"01JPY5JBQ19930KQTES29TXD3X"}}
+22/03/25 11:35:18 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username03 does not exist
+22/03/25 11:35:19 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:19 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:19 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:19 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:20 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:20 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username04'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":23,"operationName":"ReportMenuItem","requestID":"01JPY5JDBKMM1QQHQ4JJ6XJDEH"}}
+22/03/25 11:35:20 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username04 does not exist
+22/03/25 11:35:21 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:21 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:21 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:21 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:22 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:22 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username05'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":25,"operationName":"ReportMenuItem","requestID":"01JPY5JF0QN6TKJ8MABFP3PC15"}}
+22/03/25 11:35:22 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username05 does not exist
+22/03/25 11:35:22 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:22 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:23 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:23 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:23 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:23 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username06'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":23,"operationName":"ReportMenuItem","requestID":"01JPY5JGDZFPGRAEFF3FEBC7G1"}}
+22/03/25 11:35:23 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username06 does not exist
+22/03/25 11:35:23 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:24 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:24 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:24 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:24 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:24 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username07'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":22,"operationName":"ReportMenuItem","requestID":"01JPY5JHSC4VXFZEZ8TFV7JYWW"}}
+22/03/25 11:35:24 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username07 does not exist
+22/03/25 11:35:25 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:26 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:26 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:26 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:26 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:26 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username08'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":23,"operationName":"ReportMenuItem","requestID":"01JPY5JKEV7EBJ1AWEZHC4PSQ3"}}
+22/03/25 11:35:26 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username08 does not exist
+22/03/25 11:35:27 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:27 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:27 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:27 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:28 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:28 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username09'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":23,"operationName":"ReportMenuItem","requestID":"01JPY5JMXNWFQHB32MJXBKXAE3"}}
+22/03/25 11:35:28 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username09 does not exist
+22/03/25 11:35:28 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:29 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:29 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:29 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+22/03/25 11:35:29 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 199
+22/03/25 11:35:29 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'streamer-username10'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"KZ","__typename":"RequestInfo"},"user":null},"extensions":{"durationMilliseconds":22,"operationName":"ReportMenuItem","requestID":"01JPY5JPEKHGYN0HFYWHAXWEYK"}}
+22/03/25 11:35:29 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Streamer streamer-username10 does not exist
+22/03/25 11:35:30 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+22/03/25 11:35:30 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+22/03/25 11:35:30 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: 49b88dcc-f9e2-4d7a-95ba-1af4e8f7be06
+22/03/25 11:35:30 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
